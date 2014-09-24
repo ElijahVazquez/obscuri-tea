@@ -1,1 +1,17 @@
 /*CSS STUFF DUDES*/
+/*
+COLORS
+Brown: 		   rgba(46,21,16,1);
+Light Brown:   rgba(117,52,38,1);
+Red: 		   rgba(180,54,58,1);
+Pink: 		   rgba(185,88,95,1);
+Orange: 	   rgba(206,127,64,1);
+Yellow: 	   rgba(216,221,111,1);
+Green: 		   rgba(177,214,107,1);
+Blue-Green:    rgba(85,166,142,1);
+Blue: 		   rgba(27,97,114,1);
+*/
+nav{
+	width: 100%;
+	background-color: rgba(46,21,16,1);
+}
