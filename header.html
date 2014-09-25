@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+    	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
+    	*{
+    		box-sizing:border-box;
+    	}
+    	.flex{
+    		width:100%;
+    		display:flex;
+    		justify-content:space-between;
+    		flex-direction: row;
+    		flex-wrap:wrap;
+    		align-items:center;
+    	}
+    	.flex-end{
+    		align-items:flex-end;
+    	}
+    	.space-around{
+    		justify-content:space-around;
+    	}
+    	.home{
+    		margin:0 50px;
+    	}
+    	.home-header{
+    		border-bottom:2px solid #fff;
+    		padding:20px 0;
+    	}
+    	.home-header li{
+    		list-style: none;
+    		padding:0 50px;
+    		color:#fff;
+    	}
+    	.not-home{
+    		background-color: rgba(46,21,16,1);
+    		border-bottom:4px solid rgba(0,0,0,1);
+    		padding:0 50px;
+    	}
+    	.not-home .home-header{
+    		border-bottom:none;
+    	}
+    	body{
+    		background-color: #777;
+    		font-family: 'Open Sans', sans-serif;
+    	}
+    	a{
+    		color:rgba(255,255,255,1);
+    		text-decoration: none;
+    		text-transform: uppercase;
+    		font-weight: 700;
+    		letter-spacing: 3px;
+    	}
+    	a:hover{
+    		color: rgba(177,214,107,1);
+    	}
+    </style>
+</head>
+<body>
+	<header class="not-home">
+		<div class="home-header flex flex-end">
+			<a href=#><img src="img/logo.png" /></a>
+			<nav>
+				<ul class="flex">
+					<li><a href=#>Menu</a></li>
+					<li><a href=#>Location</a></li>
+					<li><a href=#>Blog</a></li>
+					<li><a href=#>Tea-Shirts</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+	</main>
+	<footer>
+	</footer>
+</body>
+</html>
