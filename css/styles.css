@@ -278,6 +278,80 @@ footer .social{
 
 /*--------------------------------store---------------------------------*/
 
+.store{
+	background-color: rgba(180,54,58,1);
+	padding-bottom:50px;
+}
+
+.store img{
+	border:4px solid rgba(255,255,255,1);
+	margin-bottom:5px;
+}
+
+.store h4{
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.store_shirt a{
+	color: rgba(46,21,16,1);
+}
+.store_shirt a:hover{
+	color: rgba(177,214,107,1);;
+}
+
+/*--------------------------------Shirt---------------------------------*/
+
+.width45{
+	width:40%;
+}
+
+.cart-button{
+	clear:both;
+	padding:25px 0;
+	border:4px solid rgba(255,255,255,1);
+	font-size: 1.5rem;
+	margin:50px auto;
+	display:block;
+	text-align: center;
+}
+
+.store_shirt_info .price{
+	font-size: 2rem;
+	margin:5px 0 15px;
+	font-style: italic;
+	font-weight: 400;
+}
+.store_shirt_info a{
+	color:rgba(255,255,255,1);
+}
+.store_shirt_info a:hover{
+	border:4px solid rgba(177,214,107,1);;
+	border-radius: 5px;
+}
+
+.store_shirt_info h3, .store_shirt_info p{
+	color:rgba(46,21,16,1);
+}
+
+.store_shirt_info select{
+	font-size: 1.25rem;
+	padding:5px 20px 5px 5px;
+	border-radius: 5px;
+	margin-top:10px;
+}
+.store_shirt_info option{
+	margin-bottom:5px;
+}
+.store_shirt .store_thumb{
+	display:block;
+	margin:0 auto;
+}
+
+.store_other_shirts{
+	margin-top:50px;
+}
+
+
 /*--------------------------------menu---------------------------------*/
 .menu-row div{
 	width:35%;
