@@ -10,8 +10,28 @@ Yellow: 	   rgba(216,221,111,1);
 Green: 		   rgba(177,214,107,1);
 Blue-Green:    rgba(85,166,142,1);
 Blue: 		   rgba(27,97,114,1);
+White:		   rgba(256,256,256,1);
+Black: 		   rgba(0,0,0,1);
 */
 /*--------------------------------Head/Foot---------------------------------*/
+body{
+	font-size: 16px;
+	font-family: helvetica, sans-serif;
+	line-height: 1.2rem;
+}
+h1{
+	
+}
+h2{
+	text-transform: uppercase;
+	font-weight: 900;
+	color: rgba(256,256,256,1);	
+}
+h3{
+	text-transform: uppercase;
+	font-weight: 100;
+	color: rgba(256,256,256,1);
+}
 nav{
 	width: 100%;
 	background-color: rgba(46,21,16,1);
@@ -20,7 +40,23 @@ nav{
 
 /*--------------------------------Location---------------------------------*/
 .location_mapSection{
-
+	width: 100%;
+	background: rgba(185,88,95,1);
+}
+.location_contentContainer{
+	width: 80%;
+	padding: 5% 1%;
+	margin: 0 auto;
+	border: 1px solid;
+}
+.location_contentContainer section{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
 }
 /*--------------------------------blog---------------------------------*/
 
