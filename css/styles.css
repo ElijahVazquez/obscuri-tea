@@ -197,13 +197,30 @@ footer .social{
 }
 .home-content{
 	padding:50px;
-	height:400px;
+	height:350px;
 	background-color: rgba(85,166,142,1);
 }
 .home-content .store-hours{
-	width:33%;
+	width:35%;
 	border-left:2px solid rgba(255,255,255,1);
-	height:300px;
+	height:250px;
+}
+.home-content .left{
+	width:65%;
+	padding-right:50px;
+}
+.home-content .left span{
+	font-size: 2rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	color:rgba(255,255,255,1);
+}
+.home-content .left a{
+	letter-spacing: 0px;
+	font-weight: 200;
+}
+.home-content .left a:hover{
+	color:rgba(177,214,107,1);
 }
 .store-hours h3{
 	color:rgba(46,21,16,1);
