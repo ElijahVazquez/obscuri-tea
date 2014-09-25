@@ -107,6 +107,12 @@ a{
 .red{
 	background-color:rgba(180,54,58,1);
 }
+.show-little{
+	display:none;
+}
+.show-big{
+	width:125% !important;
+}
 /*--------------------------------header---------------------------------*/
 
 .home{
@@ -147,7 +153,7 @@ footer nav li{
     display:block;
 }
 footer>div{
-	width:1270px;
+	width:85%;
 	margin: 0 auto;
 }
 footer{
@@ -206,7 +212,7 @@ footer .social{
 }
 .home-content{
 	padding:50px;
-	height:350px;
+	min-height:350px;
 	background-color: rgba(85,166,142,1);
 }
 .home-content .store-hours{
@@ -218,7 +224,7 @@ footer .social{
 	width:65%;
 	padding-right:50px;
 }
-.home-content .left span{
+.home-content .left h4{
 	font-size: 2rem;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -231,6 +237,12 @@ footer .social{
 }
 .home-content .left a:hover{
 	color:rgba(177,214,107,1);
+}
+.home-content .left{
+	flex-direction:column;
+}
+.home-content .left>*{
+	margin-bottom:25px;
 }
 .store-hours h3{
 	color:rgba(46,21,16,1);
@@ -254,10 +266,6 @@ footer .social{
 	position: relative;
 	top: 95px;
 	z-index: 1;
-}
-.location_contentContainer{
-	width: 860px;
-	margin: 0 auto;
 }
 .location_contentContainer section{
 	display: -webkit-box;
@@ -356,6 +364,7 @@ footer .social{
 .store img{
 	border:4px solid rgba(255,255,255,1);
 	margin-bottom:5px;
+	width:250px;
 }
 
 .store h4{
@@ -416,9 +425,11 @@ footer .social{
 	display:block;
 	margin:0 auto;
 }
-
 .store_other_shirts{
 	margin-top:50px;
+}
+.store_other_shirts img{
+	width: 100px;
 }
 
 
@@ -453,4 +464,253 @@ footer .social{
 }
 .menu .white h3{
 	color: rgba(177,214,107,1);
+}
+	.home-content .left, .home-content .store-hours{
+		width:50%;
+		text-align: center;
+	}
+@media (max-width: 1200px){
+	.home-header li{
+		padding:0 25px;
+	}
+	footer>div{
+		width:90%;
+	}
+
+}
+@media (max-width: 960px){
+	.home-header nav{
+		clear:both;
+		width:100%;
+	}
+	.home-header li{
+		padding:0;
+		margin-top:50px;
+	}
+	.home-header a{
+		display:block;
+		margin:0 auto;
+	}
+	footer>div{
+		width:100%;
+	}
+	footer>div>div>*{
+		width:50%;
+		text-align: center;
+		margin-bottom:50px;
+	}
+	footer .social{
+		display:block;
+		margin:0 auto;
+	}
+	.container{
+		width:95%;
+	}
+	.menu-row{
+		justify-content:space-around;
+	}
+	.location_contentContainer>section>div{
+		width:48%;
+	}
+	.location_map iframe{
+		width:100%;
+	}
+	.location_contact{
+		display:block;
+		margin:0 auto;
+		float:none;
+	}
+	.location_contact div{
+		width:350px;
+		display:block;
+		margin:35px auto 0;
+	}
+	.location_story img, .blog img{
+		width:90%;
+		margin-bottom:20px;
+	}
+	.store_shirt{
+		width:30%;
+	}
+	.store_shirt img, .store_shirt_single img{
+		width:100%;
+	}
+	.width45{
+		width:45%;
+	}
+	.banner-text{
+		transform:translateY(-85%);
+		-webkit-transform:translateY(-85%)
+		-moz-transform:translateY(-85%)
+	}
+	.home-content h3{
+		font-size:2.5rem;
+	}
+	.home-content h4{
+		font-size:1.25rem;
+	}
+	.home-content{
+		padding:50px 15px;
+	}
+	.home-content .left{
+		padding-right:25px;
+	}
+	.show-big{
+		width:110% !important;
+	}
+}
+@media (max-width: 580px){
+	.container{
+		width:90%;
+	}
+	h2{
+		font-size: 3rem;
+		line-height: 3rem;
+	}
+	.section_header{
+		width:95%;
+	}
+	.section_header span{
+		padding:0 10px;
+	}
+	.not-home{
+		padding:0 15px;
+	}
+	.home{
+		margin: 0 15px;
+	}
+	.not-home img{
+		width:100%;
+	}
+	.home-header li{
+		width:50%;
+		text-align: center;
+	}
+	footer>div>div>*{
+		width:100%;
+	}
+	footer h3{
+		display:block;
+	}
+	.menu-row div{
+		width:90%;
+		margin-bottom:25px;
+		padding-bottom: 20px;
+		border-bottom:1px solid rgba(46,21,16,0.45);
+	}
+	.menu-row p{
+		width:66%;
+		display:block;
+		margin:0 auto;
+	}
+	.location_contentContainer>section>div{
+		width:100%;
+		text-align: center;
+	}
+	.location_contentContainer>section>div:first-child{
+		margin-bottom:25px;
+	}
+	.location_contact div{
+		width:100%;
+	}
+	.location_story h3, .dark h3{
+		font-size:2.25rem;
+		line-height: 2.25rem;
+	}
+	.store_shirt{
+		width:90%;
+		margin:0 auto;
+		display:block;
+		margin-bottom:50px;
+	}
+	.store_shirt:last-child{
+		margin-bottom:0;
+	}
+	.width45{
+		width:90%;
+		margin:0 auto;
+	}
+	.width45:first-child{
+		margin:0 auto 25px;
+	}
+	.show-big{
+		display:none;
+	}
+	.show-little{
+		display:block;
+	}
+	.store_other_shirts{
+		margin:0;
+	}
+	.store_other_shirts .store_shirt{
+		width:40%;
+		margin-bottom: 15px;
+	}
+	.store_other_shirts .store_shirt:last-child{
+		margin-bottom: 0;
+	}
+	.store_shirt_info h3{
+		font-size: 2.5rem;
+	}
+	.store_shirt_info .price{
+			font-size: 1.5rem;
+	}
+	.store_shirt_info select{
+		width:100%;
+		margin:25px 0;
+	}
+	.store_shirt_info .cart-button{
+		margin:10px 0 35px;
+	}
+	.banner-text h3{
+		font-size: 3rem;
+		line-height: 3rem;
+	}
+	.banner-text h4{
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+	.banner-text{
+		margin-left:15px;
+		transform:translateY(-110%);
+		-webkit-transform:translateY(-110%)
+		-moz-transform:translateY(-110%)
+	}
+	.home-content>.flex{
+		flex-direction:column;
+	}
+	.home-content .store-hours{
+		border-left:none;
+		border-top:2px solid rgba(255,255,255,1);
+		width:100%;
+		padding-top:35px;
+		margin-top:15px;
+		height:inherit;
+	}
+	.home-content .left{
+		padding-right:0;
+		width:100%;
+	}
+	.store-hours div{
+		margin:50px 25px 0;
+	}
+	.store-hours div h4{
+		margin-bottom:0;
+	}
+}
+@media (max-width:400px){
+	.banner-text{
+		margin-left:15px;
+		transform:translateY(-90%);
+		-webkit-transform:translateY(-90%)
+		-moz-transform:translateY(-90%)
+	}
+}
+@media (max-width:310px){
+	.banner-text{
+		margin-left:15px;
+		transform:translateY(-85%);
+		-webkit-transform:translateY(-85%)
+		-moz-transform:translateY(-85%)
+	}
 }
