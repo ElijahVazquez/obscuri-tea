@@ -9,24 +9,25 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<nav>
-		<img src="img/logo.svg" alt="obscuri tea">
-		<ul>
-			<li><a href="index.html">menu</a></li>
-			<li><a href="location.html">location</a></li>
-			<li><a href="blog.html">blog</a></li>
-			<li><a href="store.html">tea-shirts</a></li>
-		</ul>
-	</nav>
-	<header>
-		<!--Woot Woot Web Woot!-->
+	<header class="not-home">
+		<div class="home-header flex flex-end">
+			<a href=#><img src="img/logo.png" /></a>
+			<nav>
+				<ul class="flex">
+					<li><a href=#>Menu</a></li>
+					<li><a href=#>Location</a></li>
+					<li><a href=#>Blog</a></li>
+					<li><a href=#>Tea-Shirts</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<section class="location_mapSection">
+		<h2 class="section_header"><span>Location</span></h2>
 		<div class="location_contentContainer">
-			<h2>Location</h2>
 			<section>
 				<div>
-					<h3>Stop by for a drink!</h3>
+					<h3>Stop by for<br />a drink!</h3>
 					<p>Obscuri&#8226;tea is located in the heart of Echo Park.</p>
 					<p>
 						Obscuri&#8226;tea<br />
@@ -40,9 +41,49 @@
 			</section>
 		</div>
 	</section>
-	<footer>
-		
-	</footer>
+	<section class="location_call">
+		<h3>or feel free to give us a call</h3>
+	</section>
+	<section class="location_story">
+		<h2 class="section_header"><span>Our Story</span></h2>
+		<img src="http://www.placehold.it/700x400" alt="">
+		<p>Obscuri-Tea was founded by three men and a pug in Portland Oregon in 2010. One night after debating which Wes Anderson movie truly displayed the purest expression of pretentious disinterest, we decided to get ourselves a PBR. Having out grown our local bar (a little place in the north end that, you've probably never heard of), We decided to stay in and Tobias suggested instead to brew a new organic blend tea we had picked up earlier. There, sipping our constant comet herbal infused citrus tea, we had the idea for Obsuci-Tea. Why isn't there a designated Tea House for those who seek true quality? What was stopping us from creating it? Nothing.
+ 
+We pride ourselves in only providing fair trade, non-gmo, hand picked, free range teas from only the best local sources. Each blend is hand crafted in small batches by a man with a curled mustache and botanical sleeve tattoos. He spends each day in his studio loft developing only the finest organic blends while Bon Iver records play in the background as he smokes tobacco from his hand made pipe. Each blend is then carefully weighed and packaged by a man wearing Toms and worn out Levi’s.
+
+Our mission is to establish Tea as the new coffee. Sure a dark roasted reverse osmosis pour over coffee is a good thing, but a perfectly steeped tea? Perfection. </p>
+	</section>
+		<footer>
+	        <div class="flex flex-start">
+	            <nav>
+	                <h3>Navigation</h3>
+	                <ul>
+	                    <li><a href=#>Menu</a></li>
+	                    <li><a href=#>Location</a></li>
+	                    <li><a href=#>Blog</a></li>
+	                    <li><a href=#>Tea-Shirts</a></li>
+	                </ul>
+	            </nav>
+	            <div>
+	                <h3>Contact</h3>
+	                <address>751 Echo Park Ave, Los Angeles, CA 90026</address>
+	                <section>407-867-5309</section>
+	            </div>
+	            <div>
+	                <h3>Hours</h3>
+	                <section>Monday - Saturday: 10am-11pm<br>Sunday: 11am-9pm</section>
+	            </div>
+	            <div>
+	                <h3>Social</h3>
+	                <div class="flex social">
+	                    <img src="http://placehold.it/40x40" />
+	                    <img src="http://placehold.it/40x40" />
+	                    <img src="http://placehold.it/40x40" />
+	                </div>
+	            </div>
+	        </div>
+	        <h6 class="text-center">Copyright &copy; 2014</h6>
+		</footer>
 	<script type="text/javascript" src='js/scripts.js'></script>
 </body>
 </html>

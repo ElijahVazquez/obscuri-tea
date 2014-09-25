@@ -1,4 +1,4 @@
-
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700);
 /*
 COLORS
 Brown: 		   rgba(46,21,16,1);
@@ -14,27 +14,140 @@ White:		   rgba(256,256,256,1);
 Black: 		   rgba(0,0,0,1);
 */
 /*--------------------------------Head/Foot---------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
+*{
+	box-sizing:border-box;
+}
 body{
 	font-size: 16px;
-	font-family: helvetica, sans-serif;
+	font-family: 'Open Sans', Source Sans Pro, helvetica, sans-serif;
 	line-height: 1.2rem;
-}
-h1{
-	
+	background-color: #999;
 }
 h2{
 	text-transform: uppercase;
 	font-weight: 900;
 	color: rgba(256,256,256,1);	
+	font-size: 4rem;
+	line-height: 4rem;
+}
+.section_header{
+	background: url("../img/white.png") repeat-x 0 center;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+}
+.location_mapSection .section_header span{
+	background-color: rgba(185,88,95,1);
+	padding: 0 5%;
+}
+.location_story .section_header span{
+	background-color: rgba(85,166,142,1);;
+	padding: 0 5%;
+}
+.flex{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	flex-direction: row;
+	flex-wrap:wrap;
+	align-items:center;
+}
+.flex-end{
+	align-items:flex-end;
+}
+.flex-start{
+    align-items:flex-start;
+}
+.space-around{
+	justify-content:space-around;
+}
+.text-center{
+    text-align:center;
+    margin-top:15px;
+}
+.child-thirds>*{
+    width:30%;
 }
 h3{
 	text-transform: uppercase;
 	font-weight: 100;
 	color: rgba(256,256,256,1);
+	font-size: 3rem;
+	line-height: 3rem;
 }
-nav{
+p{
+	padding: 10px 0;
+	color: rgba(256,256,256,1);
+	font-weight: 200;
+}
+/*--------------------------------header---------------------------------*/
+
+.home{
+	margin:0 50px;
+}
+.home-header{
+	border-bottom:2px solid #fff;
+	padding:20px 0;
+}
+.home-header li{
+	list-style: none;
+	padding:0 50px;
+	color:#fff;
+}
+.not-home{
 	background-color: rgba(46,21,16,1);
+	border-bottom:4px solid rgba(0,0,0,1);
+	padding:0 50px;
 }
+.not-home .home-header{
+	border-bottom:none;
+}
+header a{
+	color:rgba(255,255,255,1);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+header a:hover{
+	color: rgba(177,214,107,1);
+}
+
+/*--------------------------------footer---------------------------------*/
+footer nav li{
+	list-style: none;
+	color:#fff;
+    display:block;
+}
+footer{
+	background-color: rgba(46,21,16,1);
+	border-top:4px solid rgba(0,0,0,1);
+	padding:25px 50px;
+    color:#fff;
+}
+footer h3{
+    font-size: 2rem;
+    padding-bottom:15px;
+    margin-bottom:15px;
+    border-bottom:1px solid rgba(177,214,107,1);
+    display:inline-block;
+    line-height:2rem;
+}
+footer a{
+	color:rgba(255,255,255,1);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+a:hover{
+	color: rgba(177,214,107,1);
+}
+footer .social{
+    width:150px;
+}
+
 /*--------------------------------home---------------------------------*/
 
 /*--------------------------------Location---------------------------------*/
@@ -42,11 +155,19 @@ nav{
 	width: 100%;
 	background: rgba(185,88,95,1);
 }
+.location_mapSection hr{
+	width: 90%;
+	position: relative;
+	top: 95px;
+	z-index: 1;
+}
+.location_mapSection h2{
+	padding: 50px 0px;
+}
 .location_contentContainer{
-	width: 80%;
-	padding: 5% 1%;
+	width: 70%;
+	padding: 0% 1%;
 	margin: 0 auto;
-	border: 1px solid;
 }
 .location_contentContainer section{
 	display: -webkit-box;
@@ -55,7 +176,21 @@ nav{
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding: 0 0 50px 0;
+}
+
+.location_call{
+	position: relative;
+	background: url("http://therapistnyc.com/wp-content/uploads/2012/09/bigstock-Young-Woman-s-Hands-Holding-Re-30262637.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+}
+.location_story{
+	background: rgba(85,166,142,1);
 }
 /*--------------------------------blog---------------------------------*/
 
