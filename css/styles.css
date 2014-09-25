@@ -44,6 +44,12 @@ h2{
 	margin: 0 auto;
 	padding: 50px 0px;
 }
+.section_header.green-line{
+	background: url("../img/green.png") repeat-x 0 center;
+}
+.section_header span{
+	padding:0 50px;
+}
 .location_mapSection .section_header span{
 	background-color: rgba(185,88,95,1);
 }
@@ -98,6 +104,9 @@ a{
 	font-weight: 700;
 	letter-spacing: 3px;
 }
+.red{
+	background-color:rgba(180,54,58,1);
+}
 /*--------------------------------header---------------------------------*/
 
 .home{
@@ -144,7 +153,7 @@ footer>div{
 footer{
 	background-color: rgba(46,21,16,1);
 	border-top:4px solid rgba(0,0,0,1);
-	padding:25px 50px;
+	padding: 50px 25px 25px;
     color:#fff;
 }
 footer h3{
@@ -336,9 +345,6 @@ footer .social{
 	line-height:1.5rem;
 	letter-spacing: 0px;
 }
-.blog .green{
-	background-color: rgba(85,166,142,1);
-}
 
 /*--------------------------------store---------------------------------*/
 
@@ -436,13 +442,13 @@ footer .social{
 .menu h3{
 	font-weight: 700;
 }
-.menu .green{
+.green{
 	background-color: rgba(177,214,107,1);
 }
 .menu .white{
 	background-color: rgba(255,255,255,1);
 }
-.menu .blue-green{
+.blue-green{
 	background-color: rgba(85,166,142,1);
 }
 .menu .white h3{
