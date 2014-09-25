@@ -277,3 +277,36 @@ footer .social{
 }
 
 /*--------------------------------store---------------------------------*/
+
+/*--------------------------------menu---------------------------------*/
+.menu-row div{
+	width:35%;
+	margin-bottom:25px;
+	text-align: center;
+}
+.menu-row h4{
+	font-weight:600;
+	text-transform: uppercase;
+	color:rgba(46,21,16,1);
+}
+.menu-row p{
+	color:rgba(46,21,16,1);
+}
+.menu>section{
+	padding-bottom:25px;
+}
+.menu h3{
+	font-weight: 700;
+}
+.menu .green{
+	background-color: rgba(177,214,107,1);
+}
+.menu .white{
+	background-color: rgba(255,255,255,1);
+}
+.menu .blue-green{
+	background-color: rgba(85,166,142,1);
+}
+.menu .white h3{
+	color: rgba(177,214,107,1);
+}
