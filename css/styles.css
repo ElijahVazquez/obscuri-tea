@@ -1,4 +1,4 @@
-
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700);
 /*
 COLORS
 Brown: 		   rgba(46,21,16,1);
@@ -16,7 +16,7 @@ Black: 		   rgba(0,0,0,1);
 /*--------------------------------Head/Foot---------------------------------*/
 body{
 	font-size: 16px;
-	font-family: helvetica, sans-serif;
+	font-family: Source Sans Pro, helvetica, sans-serif;
 	line-height: 1.2rem;
 }
 h1{
@@ -26,11 +26,34 @@ h2{
 	text-transform: uppercase;
 	font-weight: 900;
 	color: rgba(256,256,256,1);	
+	font-size: 4rem;
+	line-height: 4rem;
+}
+.section_header{
+	background: url("../img/white.png") repeat-x 0 center;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+}
+.location_mapSection .section_header span{
+	background-color: rgba(185,88,95,1);
+	padding: 0 5%;
+}
+.location_story .section_header span{
+	background-color: rgba(85,166,142,1);;
+	padding: 0 5%;
 }
 h3{
 	text-transform: uppercase;
 	font-weight: 100;
 	color: rgba(256,256,256,1);
+	font-size: 3rem;
+	line-height: 3rem;
+}
+p{
+	padding: 10px 0;
+	color: rgba(256,256,256,1);
+	font-weight: 200;
 }
 nav{
 	width: 100%;
@@ -43,11 +66,19 @@ nav{
 	width: 100%;
 	background: rgba(185,88,95,1);
 }
+.location_mapSection hr{
+	width: 90%;
+	position: relative;
+	top: 95px;
+	z-index: 1;
+}
+.location_mapSection h2{
+	padding: 50px 0px;
+}
 .location_contentContainer{
-	width: 80%;
-	padding: 5% 1%;
+	width: 70%;
+	padding: 0% 1%;
 	margin: 0 auto;
-	border: 1px solid;
 }
 .location_contentContainer section{
 	display: -webkit-box;
@@ -56,7 +87,21 @@ nav{
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding: 0 0 50px 0;
+}
+
+.location_call{
+	position: relative;
+	background: url("http://therapistnyc.com/wp-content/uploads/2012/09/bigstock-Young-Woman-s-Hands-Holding-Re-30262637.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+}
+.location_story{
+	background: rgba(85,166,142,1);
 }
 /*--------------------------------blog---------------------------------*/
 
