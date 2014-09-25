@@ -137,6 +137,10 @@ footer nav li{
 	color:#fff;
     display:block;
 }
+footer>div{
+	width:1270px;
+	margin: 0 auto;
+}
 footer{
 	background-color: rgba(46,21,16,1);
 	border-top:4px solid rgba(0,0,0,1);
@@ -239,5 +243,37 @@ footer .social{
 	background-color: rgba(255,255,255,1);
 }
 /*--------------------------------blog---------------------------------*/
+
+.blog{
+	background-color: rgba(177,214,107,1);
+}
+.blog .first{
+	padding:0 0 30px;
+}
+.blog section{
+	padding:50px 0 30px;
+}
+.dark h3{
+	padding-bottom:15px;
+	color:rgba(46,21,16,1);
+}
+.dark p, .dark a{
+	color:rgba(46,21,16,1);
+}
+.blog img{
+	display:block;
+	margin:0 auto;
+	border:4px solid rgba(255,255,255,1);
+	margin-bottom:50px;
+}
+.blog p a{
+	font-weight:700;
+	text-transform: uppercase;
+	line-height:1.5rem;
+	letter-spacing: 0px;
+}
+.blog .green{
+	background-color: rgba(85,166,142,1);
+}
 
 /*--------------------------------store---------------------------------*/
