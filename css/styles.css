@@ -13,7 +13,7 @@ Blue: 		   rgba(27,97,114,1);
 White:		   rgba(256,256,256,1);
 Black: 		   rgba(0,0,0,1);
 */
-/*--------------------------------Head/Foot---------------------------------*/
+/*--------------------------------General Code---------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
 *{
 	box-sizing:border-box;
@@ -31,19 +31,24 @@ h2{
 	font-size: 4rem;
 	line-height: 4rem;
 }
+.container{
+	margin:0 auto;
+	display:block;
+	width:860px;
+	height:100%;
+}
 .section_header{
 	background: url("../img/white.png") repeat-x 0 center;
 	text-align: center;
 	width: 90%;
 	margin: 0 auto;
+	padding: 50px 0px;
 }
 .location_mapSection .section_header span{
 	background-color: rgba(185,88,95,1);
-	padding: 0 5%;
 }
 .location_story .section_header span{
 	background-color: rgba(85,166,142,1);;
-	padding: 0 5%;
 }
 .flex{
 	width:100%;
@@ -66,8 +71,12 @@ h2{
     text-align:center;
     margin-top:15px;
 }
-.child-thirds>*{
-    width:30%;
+.vertical-align{
+	position: relative;
+	top:50%;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
 }
 h3{
 	text-transform: uppercase;
@@ -80,6 +89,14 @@ p{
 	padding: 10px 0;
 	color: rgba(256,256,256,1);
 	font-weight: 200;
+}
+
+a{
+	color:rgba(255,255,255,1);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 3px;
 }
 /*--------------------------------header---------------------------------*/
 
@@ -161,12 +178,8 @@ footer .social{
 	top: 95px;
 	z-index: 1;
 }
-.location_mapSection h2{
-	padding: 50px 0px;
-}
 .location_contentContainer{
-	width: 70%;
-	padding: 0% 1%;
+	width: 860px;
 	margin: 0 auto;
 }
 .location_contentContainer section{
@@ -182,15 +195,48 @@ footer .social{
 
 .location_call{
 	position: relative;
-	background: url("http://therapistnyc.com/wp-content/uploads/2012/09/bigstock-Young-Woman-s-Hands-Holding-Re-30262637.jpg") no-repeat center center fixed;
+	background: url("../img/location-contact-bg-full.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 500px;
+    text-align: center;
+}
+.location_call>div{
+	background-color: rgba(0,0,0,0.5);
+	height:100%; width:100%;
+}
+.location_contact{
+	float:right;
+}
+.location_contact div{
+	border:3px solid rgba(255,255,255,1);
+	padding:20px 0;
+	font-size: 2rem;
+	margin-top:35px;
 }
 .location_story{
 	background: rgba(85,166,142,1);
+	padding-bottom:50px;
+}
+.location_story h3{
+	padding-bottom:15px;
+	color:rgba(46,21,16,1);
+}
+.location_story p{
+	color:rgba(46,21,16,1);
+}
+.location_story img{
+	display:block;
+	margin:0 auto;
+	border:4px solid rgba(255,255,255,1);
+	margin-bottom:50px;
+}
+.location_map{
+	border:4px solid rgba(255,255,255,1);
+	border-bottom: none;
+	background-color: rgba(255,255,255,1);
 }
 /*--------------------------------blog---------------------------------*/
 
