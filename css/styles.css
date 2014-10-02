@@ -131,6 +131,7 @@ padding:20px 0;
 list-style:none;
 padding:0 50px;
 color:#fff;
+z-index: 200;
 }
 .home-header a[href="index.html"]:hover{
 /*transform*/
@@ -200,8 +201,14 @@ footer .social img:hover{
 opacity:0.5;
 }
 /*--------------------------------home---------------------------------*/
+canvas{
+  position: fixed;
+  top: 0;
+  left:50%;
+  z-index: 1;
+}
 .home-banner{
-background-image:url(../img/header-banner.png);
+background: url(../img/header-banner.png) no-repeat center center fixed;
 /*background-size*/
 -webkit-background-size:/*@@prefixmycss->No equivalent*/
 :;
@@ -237,11 +244,13 @@ margin-left:50px;
 padding:50px;
 min-height:300px;
 background-color:rgba(85,166,142,1);
+z-index: 9999;
 }
 .home-content .store-hours{
 width:35%;
 border-left:2px solid rgba(255,255,255,1);
 height:200px;
+z-index: 199;
 }
 .home-content .left{
 width:65%;
@@ -277,6 +286,7 @@ line-height:2rem;
 }
 .store-hours div h4{
 margin-bottom:15px;
+
 }
 /*--------------------------------Location---------------------------------*/
 .location_mapSection{
