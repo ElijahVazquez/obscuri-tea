@@ -7,13 +7,19 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
 	<main class="home-banner">
 		<header class="home">
 			<div class="home-header flex flex-end">
-				<a href="index.html"><img src="img/logo.png" /></a>
+				<a href="index.html"><img src="img/logo.png" id="logo" /></a>
 				<nav>
+					<a class="mobile_nav" href="www.google.com">
+						<img src="img/menu.png" alt="" id="hamburger" />
+					</a>
+				</nav>
+				<nav class="nav-collapse">
 					<ul class="flex">
 						<li><a href="menu.html">Menu</a></li>
 						<li><a href="location.html">Location</a></li>
