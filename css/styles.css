@@ -161,6 +161,9 @@ header a:hover{
 color:rgba(177,214,107,1);
 }
 
+    .home-header nav {
+      z-index: 200;
+    }
 
     a.mobile_nav {
         display: none;
@@ -846,6 +849,5 @@ margin-left:15px;
   }
 
   /* end mobile nav crap */
-
 
 }
