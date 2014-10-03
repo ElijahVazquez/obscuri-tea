@@ -423,7 +423,7 @@ text-transform:uppercase;
 }
 .store_shirt a{
 color:rgba(46,21,16,1);
-line-height: 1em;
+line-height: 1.5em;
 }
 .store_shirt h4:last-child{
   letter-spacing: 0px;
@@ -433,6 +433,9 @@ color:rgba(177,214,107,1);
 }
 .store_shirt a img:hover{
 border: 1px solid #fff;
+}
+.inline{
+  display: inline;
 }
 /*--------------------------------Shirt---------------------------------*/
 
