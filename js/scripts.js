@@ -42,4 +42,8 @@ $(document).ready(function() {
 			$("#canvas_Element").show();
 		}
 	});
+	$('#nav-trigger').click(function(e){
+		e.preventDefault();
+		$('#toggle').slideToggle(250);
+	});
 });
