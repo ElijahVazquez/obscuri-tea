@@ -22,7 +22,7 @@ transition:all 0.15s;
 -moz-transition:all 0.15s;
 }
 body{
-font-size:18px;
+font-size: 18px;
 font-family:'Open Sans', Source Sans Pro, helvetica, sans-serif;
 line-height:24px;
 line-height:1.5rem;
@@ -435,7 +435,7 @@ color: rgba(46,21,16,1);
 .dark p, .dark a{
 color: rgba(46,21,16,1);
 }
-.blog p{
+.blog p, .location_story p{
   text-indent:32px;
   text-indent: 2rem;
 }
