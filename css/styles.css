@@ -261,10 +261,7 @@ canvas{
 }
 .home-banner{
 background: url(../img/header-banner.png) no-repeat center center fixed;
-/*background-size*/
-/*background-size*/
-background-size:cover;
-/*@@prefixmycss->No equivalent*/
+background-size: cover;
 height:650px;
 }
 .home-banner h3{
@@ -554,7 +551,7 @@ padding-bottom:25px;
 font-weight:700;
 }
 .green{
-background-color:rgba(177,214,107,1);
+background-color: rgba(177,214,107,1);
 }
 .menu .white{
 background-color:rgba(255,255,255,1);
@@ -797,7 +794,8 @@ line-height:3rem;
 width:95%;
 }
 .section_header span{
-padding:0 10px;
+padding: 0 0 0 0;
+line-height: 3.5rem;
 }
 .not-home{
 padding:0 15px;
