@@ -1,11 +1,6 @@
-alert("JS works");
 $(document).ready(function() {
-	$(".home-content").click(function(){
-		alert("jQuery click works");
-	})
-	alert("lahhhhh");
-	$(window).scroll(function () {
-	    var scroll = $(window).scrollTop();
-	    alert("scroll Works");
+	$('#nav-trigger').click(function(e){
+		e.preventDefault();
+		$('#toggle').slideToggle(250);
 	});
 });
