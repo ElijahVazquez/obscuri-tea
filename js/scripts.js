@@ -33,7 +33,7 @@ $(document).ready(function() {
 	$(window).scroll(function () {
 		var scroll = $(window).scrollTop();
 		var height = $(window).height();
-		var smokeHide = height-250;
+		var smokeHide = height-300;
 		console.log(scroll + " " + height);
 		if(scroll >= smokeHide){
 			$("#canvas_Element").hide();
