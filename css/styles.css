@@ -391,7 +391,7 @@ padding: 0 0 30px;
 padding: 50px 0 50px;
 }
 .dark h3{
-padding-bottom:15px;
+padding-bottom: 15px;
 color: rgba(46,21,16,1);
 }
 .dark p, .dark a{
@@ -423,9 +423,16 @@ text-transform:uppercase;
 }
 .store_shirt a{
 color:rgba(46,21,16,1);
+line-height: 1em;
+}
+.store_shirt h4:last-child{
+  letter-spacing: 0px;
 }
 .store_shirt a:hover{
 color:rgba(177,214,107,1);
+}
+.store_shirt a img:hover{
+border: 1px solid #fff;
 }
 /*--------------------------------Shirt---------------------------------*/
 
@@ -525,8 +532,9 @@ padding:0 25px;
 footer>div{
 width:90%;
 }
+
 }
-@media (max-width: 960px){
+@media (max-width: 960px){ /*==========================960 Media Query================================================*/
 
   /* mobile nav hide */
 
@@ -565,7 +573,7 @@ display:block;
 margin:0 auto;
 }
 .container{
-width:95%;
+width:90%;
 }
 .menu-row{
 justify-content:space-around;
@@ -599,6 +607,9 @@ width:100%;
 .width45{
 width:45%;
 }
+.shirt2{
+  display: block;
+}
 .banner-text{
 /*transform*/
 -webkit-transform:translateY(-85%);
@@ -622,8 +633,12 @@ padding-right:25px;
 .show-big{
 width:110% !important;
 }
+.blog img, .location_story img{ 
+  width: 70%;
 }
-@media (max-width: 580px){
+
+}
+@media (max-width: 580px){  /*==========================580 Media Query================================================*/
 
 /* mobile nav stuff */
     .mob{
@@ -803,7 +818,7 @@ footer h3{
   margin-right: auto;
 }
 }
-@media (max-width:400px){
+@media (max-width:400px){  /*==========================400 Media Query================================================*/
 
 
 /* mobile nav crap */ 
@@ -831,7 +846,7 @@ margin-left:15px;
         transform:translateY(-90%);
 }
 }
-@media (max-width:310px){
+@media (max-width:310px){  /*==========================310 Media Query================================================*/
 .banner-text{
 margin-left:15px;
 /*transform*/
