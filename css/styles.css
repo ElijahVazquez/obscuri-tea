@@ -552,8 +552,11 @@ margin:0 auto;
 footer>div{
 width:100%;
 }
+footer nav{
+  display:none;
+}
 footer>div>div>*{
-width:50%;
+width:33%;
 text-align:center;
 margin-bottom:50px;
 }
@@ -787,6 +790,18 @@ margin:50px 25px 0;
 .store-hours div h4{
 margin-bottom:0;
 }
+.hide560{
+  display:none;
+}
+footer .social{
+  width:66%;
+  display:flex;
+}
+footer h3{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 @media (max-width:400px){
 
@@ -826,11 +841,4 @@ margin-left:15px;
      -o-transform:translateY(-85%);
         transform:translateY(-85%);
 }
-
-
-/* mobile nav crap */
-
-
-  /* end mobile nav crap */
-
 }
