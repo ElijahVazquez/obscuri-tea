@@ -1,17 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700);
 /*
 COLORS
-Brown: 		   rgba(46,21,16,1);
+Brown:       rgba(46,21,16,1);
 Light Brown:   rgba(117,52,38,1);
-Red: 		   rgba(180,54,58,1);
-Pink: 		   rgba(185,88,95,1);
-Orange: 	   rgba(206,127,64,1);
-Yellow: 	   rgba(216,221,111,1);
-Green: 		   rgba(177,214,107,1);
+Red:       rgba(180,54,58,1);
+Pink:        rgba(185,88,95,1);
+Orange:      rgba(206,127,64,1);
+Yellow:      rgba(216,221,111,1);
+Green:       rgba(177,214,107,1);
 Blue-Green:    rgba(85,166,142,1);
-Blue: 		   rgba(27,97,114,1);
-White:		   rgba(256,256,256,1);
-Black: 		   rgba(0,0,0,1);
+Blue:        rgba(27,97,114,1);
+White:       rgba(256,256,256,1);
+Black:       rgba(0,0,0,1);
 */
 /*--------------------------------General Code---------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
@@ -24,6 +24,7 @@ transition:all 0.15s;
 body{
 font-size:18px;
 font-family:'Open Sans', Source Sans Pro, helvetica, sans-serif;
+line-height:24px;
 line-height:1.5rem;
 background-color:#999;
 }
@@ -31,7 +32,9 @@ h2{
 text-transform:uppercase;
 font-weight:900;
 color:rgba(256,256,256,1);
+font-size:64px;
 font-size:4rem;
+line-height:64px;
 line-height:4rem;
 }
 .container{
@@ -65,23 +68,49 @@ background-color:rgba(85,166,142,1);
 }
 .flex{
 width:100%;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
 display:flex;
-justify-content:space-between;
-flex-direction:row;
-flex-wrap:wrap;
-align-items:center;
+-webkit-box-pack:justify;
+-webkit-justify-content:space-between;
+    -ms-flex-pack:justify;
+        justify-content:space-between;
+-webkit-box-orient:horizontal;
+-webkit-box-direction:normal;
+-webkit-flex-direction:row;
+    -ms-flex-direction:row;
+        flex-direction:row;
+-webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+-webkit-box-align:center;
+-webkit-align-items:center;
+    -ms-flex-align:center;
+        align-items:center;
 }
 .flex-end{
-align-items:flex-end;
+-webkit-box-align:end;
+-webkit-align-items:flex-end;
+    -ms-flex-align:end;
+        align-items:flex-end;
 }
 .flex-center{
-  align-items:center;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+      -ms-flex-align:center;
+          align-items:center;
 }
 .flex-start{
-align-items:flex-start;
+-webkit-box-align:start;
+-webkit-align-items:flex-start;
+    -ms-flex-align:start;
+        align-items:flex-start;
 }
 .space-around{
-justify-content:space-around;
+-webkit-justify-content:space-around;
+    -ms-flex-pack:distribute;
+        justify-content:space-around;
 }
 .text-center{
 text-align:center;
@@ -92,16 +121,15 @@ position:relative;
 top:50%;
 /*transform*/
 -webkit-transform:translateY(-50%);
-   -moz-transform:translateY(-50%);
-    -ms-transform:translateY(-50%);
-     -o-transform:translateY(-50%);
         transform:translateY(-50%);
 }
 h3{
 text-transform:uppercase;
 font-weight:100;
 color:rgba(256,256,256,1);
+font-size:48px;
 font-size:3rem;
+line-height:48px;
 line-height:3rem;
 }
 p{
@@ -143,11 +171,9 @@ z-index: 200;
 .home-header a[href="index.html"]:hover{
 /*transform*/
 -webkit-transform:translateY(5px);
-   -moz-transform:translateY(5px);
-    -ms-transform:translateY(5px);
-     -o-transform:translateY(5px);
         transform:translateY(5px);
 opacity:0.8;
+filter:alpha(opacity=80);
 }
 .not-home{
 background-color:rgba(46,21,16,1);
@@ -199,11 +225,13 @@ padding:50px 25px 25px;
 color:#fff;
 }
 footer h3{
+font-size:32px;
 font-size:2rem;
 padding-bottom:15px;
 margin-bottom:15px;
 border-bottom:1px solid rgba(177,214,107,1);
 display:inline-block;
+line-height:32px;
 line-height:2rem;
 }
 footer a{
@@ -221,6 +249,7 @@ width:160px;
 }
 footer .social img:hover{
 opacity:0.5;
+filter:alpha(opacity=50);
 }
 /*--------------------------------home---------------------------------*/
 canvas{
@@ -232,23 +261,22 @@ canvas{
 .home-banner{
 background: url(../img/header-banner.png) no-repeat center center fixed;
 /*background-size*/
--webkit-background-size:/*@@prefixmycss->No equivalent*/
-:;
 /*background-size*/
--webkit-background-size:/*@@prefixmycss->No equivalent*/;
-   -moz-background-size:cover;
-     -o-background-size:/*@@prefixmycss->No equivalent*/;
-        background-size:cover;
+background-size:cover;
 /*@@prefixmycss->No equivalent*/
 height:650px;
 }
 .home-banner h3{
+font-size:64px;
 font-size:4rem;
+line-height:67px;
 line-height:4.2rem;
 }
 .home-banner h4{
 font-weight:700;
+font-size:40px;
 font-size:2.5rem;
+line-height:43px;
 line-height:2.7rem;
 text-transform:uppercase;
 color:rgba(255,255,255,1);
@@ -257,9 +285,6 @@ color:rgba(255,255,255,1);
 margin-left:50px;
 /*transform*/
 -webkit-transform:translateY(-70%);
-   -moz-transform:translateY(-70%);
-    -ms-transform:translateY(-70%);
-     -o-transform:translateY(-70%);
         transform:translateY(-70%);
 }
 .home-content{
@@ -315,7 +340,9 @@ color:rgba(46,21,16,1);
 }
 .store-hours div{
 margin:40px 25px;
+font-size:28px;
 font-size:1.8rem;
+line-height:32px;
 line-height:2rem;
 }
 .store-hours div h4{
@@ -335,25 +362,22 @@ z-index:1;
 }
 .location_contentContainer section{
 display:-webkit-box;
-display:-moz-box;
 display:-ms-flexbox;
 display:-webkit-flex;
 display:flex;
 -webkit-flex-flow:row wrap;
-justify-content:space-between;
+-webkit-box-pack:justify;
+-webkit-justify-content:space-between;
+    -ms-flex-pack:justify;
+        justify-content:space-between;
 padding:0 0 50px 0;
 }
 .location_call{
 position:relative;
 background:url("../img/location-contact-bg-full.png") no-repeat center center fixed;
 /*background-size*/
--webkit-background-size:/*@@prefixmycss->No equivalent*/
-:;
 /*background-size*/
--webkit-background-size:/*@@prefixmycss->No equivalent*/;
-   -moz-background-size:cover;
-     -o-background-size:/*@@prefixmycss->No equivalent*/;
-        background-size:cover;
+background-size:cover;
 /*@@prefixmycss->No equivalent*/
 height:500px;
 text-align:center;
@@ -369,6 +393,7 @@ float:right;
 .location_contact div{
 border:3px solid rgba(255,255,255,1);
 padding:20px 0;
+font-size:32px;
 font-size:2rem;
 margin-top:35px;
 }
@@ -413,6 +438,7 @@ color: rgba(46,21,16,1);
 color: rgba(46,21,16,1);
 }
 .blog p{
+  text-indent:32px;
   text-indent: 2rem;
 }
 .blog img{
@@ -461,12 +487,14 @@ width:40%;
 clear:both;
 padding:25px 0;
 border:4px solid rgba(255,255,255,1);
+font-size:24px;
 font-size:1.5rem;
 margin:50px auto;
 display:block;
 text-align:center;
 }
 .store_shirt_info .price{
+font-size:32px;
 font-size:2rem;
 margin:5px 0 15px;
 font-style:italic;
@@ -478,20 +506,17 @@ color:rgba(255,255,255,1);
 .store_shirt_info a:hover{
 border:4px solid rgba(177,214,107,1);
 /*border-radius*/
--webkit-border-radius:5px;
-   -moz-border-radius:5px;
-        border-radius:5px;
+border-radius:5px;
 }
 .store_shirt_info h3, .store_shirt_info p{
 color:rgba(46,21,16,1);
 }
 .store_shirt_info select{
+font-size:20px;
 font-size:1.25rem;
 padding:5px 20px 5px 5px;
 /*border-radius*/
--webkit-border-radius:5px;
-   -moz-border-radius:5px;
-        border-radius:5px;
+border-radius:5px;
 margin-top:10px;
 }
 .store_shirt_info option{
@@ -598,7 +623,9 @@ margin:0 auto;
 width:90%;
 }
 .menu-row{
-justify-content:space-around;
+-webkit-justify-content:space-around;
+    -ms-flex-pack:distribute;
+        justify-content:space-around;
 }
 .location_contentContainer>section>div{
 width:48%;
@@ -635,15 +662,14 @@ width:45%;
 .banner-text{
 /*transform*/
 -webkit-transform:translateY(-85%);
-   -moz-transform:translateY(-85%);
-    -ms-transform:translateY(-85%);
-     -o-transform:translateY(-85%);
         transform:translateY(-85%);
 }
 .home-content h3{
+font-size:40px;
 font-size:2.5rem;
 }
 .home-content h4{
+font-size:20px;
 font-size:1.25rem;
 }
 .home-content{
@@ -656,6 +682,9 @@ width:110% !important;
   width: 70%;
 }
 .flex960{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
   display:flex;
 }
 .flex960>div:first-child{
@@ -758,7 +787,9 @@ width:110% !important;
 width:90%;
 }
 h2{
+font-size:48px;
 font-size:3rem;
+line-height:48px;
 line-height:3rem;
 }
 .section_header{
@@ -808,7 +839,9 @@ margin-bottom:25px;
 width:100%;
 }
 .location_story h3, .dark h3{
+font-size:36px;
 font-size:2.25rem;
+line-height:36px;
 line-height:2.25rem;
 }
 .store_shirt{
@@ -844,9 +877,11 @@ margin-bottom:15px;
 margin-bottom:0;
 }
 .store_shirt_info h3{
+font-size:40px;
 font-size:2.5rem;
 }
 .store_shirt_info .price{
+font-size:24px;
 font-size:1.5rem;
 }
 .store_shirt_info select{
@@ -857,24 +892,29 @@ margin:25px 0;
 margin:10px 0 35px;
 }
 .banner-text h3{
+font-size:48px;
 font-size:3rem;
+line-height:48px;
 line-height:3rem;
 }
 .banner-text h4{
+font-size:32px;
 font-size:2rem;
+line-height:32px;
 line-height:2rem;
 }
 .banner-text{
 margin-left:15px;
 /*transform*/
 -webkit-transform:translateY(-110%);
-   -moz-transform:translateY(-110%);
-    -ms-transform:translateY(-110%);
-     -o-transform:translateY(-110%);
         transform:translateY(-110%);
 }
 .home-content>.flex{
-flex-direction:column;
+-webkit-box-orient:vertical;
+-webkit-box-direction:normal;
+-webkit-flex-direction:column;
+    -ms-flex-direction:column;
+        flex-direction:column;
 }
 .home-content .store-hours{
 border-left:none;
@@ -899,6 +939,9 @@ margin-bottom:0;
 }
 footer .social{
   width:66%;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
   display:flex;
 }
 footer h3{
@@ -929,9 +972,6 @@ footer h3{
 margin-left:15px;
 /*transform*/
 -webkit-transform:translateY(-90%);
-   -moz-transform:translateY(-90%);
-    -ms-transform:translateY(-90%);
-     -o-transform:translateY(-90%);
         transform:translateY(-90%);
 }
 }
@@ -940,9 +980,6 @@ margin-left:15px;
 margin-left:15px;
 /*transform*/
 -webkit-transform:translateY(-85%);
-   -moz-transform:translateY(-85%);
-    -ms-transform:translateY(-85%);
-     -o-transform:translateY(-85%);
         transform:translateY(-85%);
 }
 }
